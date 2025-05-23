@@ -1,0 +1,122 @@
+/* Other styles you already have */
+.view-students-container {
+    padding: 20px;
+    background-color: #f4f7fc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.no-students {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+}
+
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.students-table th,
+.students-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+.students-table th {
+    background-color: #4CAF50;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.students-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.students-table tr:hover {
+    background-color: #e6f7e6;
+}
+
+.zero-change {
+    color: red;
+    font-weight: bold;
+}
+
+/* Submission status styles */
+.submission-status {
+    font-weight: bold;
+}
+
+.submission-status.normal {
+    color: green; 
+}
+
+.submission-status.malpractice {
+    color: red; 
+    animation: blink 1s infinite; /* blinking added */
+}
+
+/* Blinking animation */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Additional styling for submission status text */
+.submission-status.normal::after {
+    content: " (Normal Submission)";
+    font-style: italic;
+    color: #333;
+}
+
+.submission-status.malpractice::after {
+    content: " (Due to Malpractice)";
+    font-style: italic;
+    color: #a80000;
+}
+
+.submission-reason {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Styling for action buttons */
+.give-test-again-btn {
+    background-color: #FF7043;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.give-test-again-btn:hover {
+    background-color: #FF5722;
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 4px 12px rgba(255, 87, 34, 0.4); /* Orange glow */
+}
+
+.students-table td.submission-status {
+    text-transform: capitalize; /* Capitalize status text */
+}

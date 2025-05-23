@@ -1,0 +1,59 @@
+/* styles/studentProfile.css */
+.student-profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .profile-details p {
+    margin: 5px 0;
+  }
+  
+  .courses-section,
+  .test-results-section,
+  .discussion-room-section,
+  .notification-section {
+    margin-bottom: 30px;
+  }
+  
+  .courses-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .courses-section li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .test-results-section table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .test-results-section th,
+  .test-results-section td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .test-results-section th {
+    background-color: #f2f2f2;
+  }
+  

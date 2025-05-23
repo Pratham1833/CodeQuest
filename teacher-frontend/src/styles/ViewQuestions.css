@@ -1,0 +1,90 @@
+/* ViewQuestions.css */
+.view-questions-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.view-questions-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.questions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.questions-table th,
+.questions-table td {
+  border: 1px solid #333;
+  padding: 12px;
+  text-align: left;
+}
+
+.questions-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.questions-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.questions-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.questions-table button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.questions-table button:hover {
+  background-color: #c0392b;
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #27ae60;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .questions-table th,
+  .questions-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+  
+  .back-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
